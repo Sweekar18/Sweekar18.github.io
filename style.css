@@ -81,3 +81,47 @@ footer {
     width: 90%;
   }
 }
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #004d66;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+blockquote {
+  font-style: italic;
+  background: #f0f0f0;
+  padding: 15px;
+  border-left: 5px solid #004d66;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
