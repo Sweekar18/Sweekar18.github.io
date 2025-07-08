@@ -1,101 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us - SK Engineering Consultancy</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>SK Engineering Consultancy</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="testimonials.html">Testimonials</a>
-    </nav>
-  </header>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <!-- Company Overview -->
-    <section>
-      <h2>About Us</h2>
-      <p>
-        <strong>SK Engineering Consultancy</strong> is a reliable and innovative civil engineering firm based in <strong>Bharatpur, Chitwan, Nepal</strong>.  
-        We specialize in <strong>house map design</strong>, <strong>structural planning</strong>, <strong>3D modeling</strong>, and <strong>construction supervision</strong>.
-        <br><br>
-        Our mission is to deliver sustainable and aesthetic building solutions with a balance of design, durability, and cost-effectiveness. We are committed to turning your dream spaces into reality with professionalism and precision.
-      </p>
-    </section>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    <!-- Mission Section -->
-    <section>
-      <h2>Our Mission</h2>
-      <p>
-        To provide top-quality civil engineering solutions by combining <strong>modern design</strong>, <strong>engineering excellence</strong>, and <strong>client-centered service</strong>.
-        <br><br>
-        We believe in building homes and relationships that last.
-      </p>
-    </section>
+header {
+  background: #004d66;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
-    <!-- Team Section -->
-    <section id="team">
-      <h2>Meet Our Team</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <img src="images/sweekar.jpg" alt="Er.Arun Poudel">
-          <h3>Sweekar Subedi</h3>
-          <p>Founder & Civil Engineer</p>
-        </div>
-        <div class="team-member">
-          <img src="images/ritik.jpg" alt="Er.Sweekar Subedi">
-          <h3>Ritik Pandey</h3>
-          <p>Structural Engineer</p>
-        </div>
-        <div class="team-member">
-          <img src="images/subham.jpg" alt="Subham Biswas">
-          <h3>Subham Biswas</h3>
-          <p>3D Designer</p>
-        </div>
-        <div class="team-member">
-          <img src="images/nandan.jpg" alt="Nandan Lenka">
-          <h3>Nandan Lenka</h3>
-          <p>Site Supervisor</p>
-        </div>
-      </div>
-    </section>
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 
-    <!-- Location Section -->
-    <section id="location" style="margin-top: 40px; text-align: center;">
-      <h2>Our Office Location</h2>
-      <p>We are located at Lions Chowk, Bharatpur-10, Chitwan, Nepal.</p>
-      <p>
-        <a href="https://www.google.com/maps?q=Sk+engineering+consultancy+Bharatpur" target="_blank">
-          📍 View on Google Maps
-        </a>
-      </p>
-      <div style="margin-top: 20px; border-radius: 12px; overflow: hidden; max-width: 100%;">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1810001.253838699!2d83.28343530248493!3d27.619601183983423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb0028bcac61%3A0x18491185c2bf5960!2sSk%20engineering%20consultancy!5e0!3m2!1sen!2snp!4v1751983315469!5m2!1sen!2snp" 
-          width="100%" 
-          height="300" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Google Map of SK Engineering Consultancy">
-        </iframe>
-      </div>
-    </section>
-  </main>
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
 
-  <footer>
-    <p>© 2025 SK Engineering Consultancy | Bharatpur, Chitwan, Nepal</p>
-  </footer>
+nav a.active,
+nav a:hover {
+  background: #0288d1;
+}
 
-  <a href="https://wa.me/9779845075456" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">💬</a>
-</body>
-</html>
+main {
+  flex-grow: 1;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background: linear-gradient(145deg, #2196f3 0%, #64b5f6 100%);
+  color: white;
+  padding: 50px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow:
+    8px 8px 15px rgba(0, 0, 0, 0.15),
+    -8px -8px 15px rgba(255, 255, 255, 0.7);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: transform 0.3s ease;
+}
+
+.hero:hover {
+  transform: rotateY(8deg) rotateX(5deg);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #004d66;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow:
+    5px 5px 10px rgba(0, 0, 0, 0.15),
+    -5px -5px 10px rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #0288d1;
+}
+
+.btn-secondary {
+  background: #0288d1;
+  margin-top: 20px;
+}
+
+#services-preview .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow:
+    6px 6px 12px rgba(0,0,0,0.1),
+    -6px -6px 12px rgba(255,255,255,0.7);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateZ(20px) scale(1.05);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: #004d66;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #1a1a1a;
+}
+
+#projects-preview .gallery {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#projects-preview .gallery img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow:
+    4px 4px 8px rgba(0,0,0,0.15),
+    -4px -4px 8px rgba(255,255,255,0.3);
+  transition: transform 0.3s ease;
+}
+
+#projects-preview .gallery img:hover {
+  transform: scale(1.07) translateZ(10px);
+}
+
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 14px 18px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c4a;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  main {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  #projects-preview .gallery img {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+#team {
+  margin-top: 40px;
+}
+
+#team h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004d66;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.team-member {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow:
+    5px 5px 12px rgba(0,0,0,0.1),
+    -5px -5px 12px rgba(255,255,255,0.7);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #004d66;
+}
+
+#location {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#location h2 {
+  color: #004d66;
+  margin-bottom: 10px;
+}
+
+#location a {
+  color: #0288d1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#location a:hover {
+  text-decoration: underline;
+}
