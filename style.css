@@ -203,3 +203,44 @@ footer {
     height: auto;
   }
 }
+#team {
+  margin-top: 40px;
+}
+
+#team h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004d66;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.team-member {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow:
+    5px 5px 12px rgba(0,0,0,0.1),
+    -5px -5px 12px rgba(255,255,255,0.7);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #004d66;
+}
+
