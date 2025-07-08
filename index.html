@@ -2,75 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SK Engineering Consultancy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SK Engineering Consultancy - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>SK Engineering Consultancy</h1>
-    <p>Designing Dreams. Building Realities.</p>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="testimonials.html">Testimonials</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section class="hero">
+      <h2>Designing Dreams, Building Futures</h2>
+      <p>Professional civil engineering consultancy specializing in house map designs, structural analysis, and project supervision.</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>SK Engineering Consultancy is a trusted civil engineering firm based in Nepal. We specialize in house map design, structural planning, and construction supervision. With years of experience and satisfied clients across the region, we aim to turn your dream home into reality.</p>
-</section>
+    <section id="services-preview">
+      <h3>Our Services</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>House Map Design</h4>
+          <p>Custom-designed architectural plans tailored to your needs.</p>
+        </div>
+        <div class="card">
+          <h4>Structural Analysis</h4>
+          <p>Ensure safety and durability with expert structural calculations.</p>
+        </div>
+        <div class="card">
+          <h4>3D Modeling & Drafting</h4>
+          <p>Visualize your project with detailed 3D renderings.</p>
+        </div>
+        <div class="card">
+          <h4>Site Supervision</h4>
+          <p>Professional oversight to keep your construction on track.</p>
+        </div>
+      </div>
+      <a href="services.html" class="btn btn-secondary">Learn More</a>
+    </section>
 
-<section id="testimonials">
-  <h2>Testimonials</h2>
-  <blockquote>"SK Engineering helped me build my dream house. Highly professional!" – Mr Sweekar Subedi</blockquote>
-  <blockquote>"Quick service and great map designs. Recommended!" – Ms Shreyaskar Poudel</blockquote>
-</section>
-
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>House Map Design</li>
-      <li>2D & 3D House Planning</li>
-      <li>Structural Analysis & Estimation</li>
-      <li>Site Supervision</li>
-    </ul>
-  </section>
-
- <section id="projects">
-  <h2>Recent Projects</h2>
-  <div class="project-gallery">
-    <div class="project-card">
-      <img src="images/project1.jpg" alt="House Plan 1" />
-      <p>Modern 2-storey house design</p>
-    </div>
-    <div class="project-card">
-      <img src="images/project2.jpg" alt="House Plan 2" />
-      <p>Traditional Nepali-style bungalow</p>
-    </div>
-  </div>
-</section>
-
- <section id="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/mkgblbkk" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br />
-    <input type="email" name="email" placeholder="Your Email" required><br />
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br />
-    <button type="submit">Send</button>
-  </form>
-</section>
-
+    <section id="projects-preview">
+      <h3>Recent Projects</h3>
+      <div class="gallery">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <img src="images/project2.jpg" alt="Project 2" />
+        <img src="images/project3.jpg" alt="Project 3" />
+      </div>
+      <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 SK Engineering Consultancy</p>
+    <p>© 2025 SK Engineering Consultancy | Butwal, Nepal</p>
   </footer>
-<a href="https://wa.me/97798XXXXXXXX" class="whatsapp-float" target="_blank">
-  💬 Chat on WhatsApp
-</a>
+
+  <a href="https://wa.me/97798XXXXXXXX" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">💬</a>
 
 </body>
 </html>
