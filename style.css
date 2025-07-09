@@ -141,6 +141,16 @@ main {
   font-size: 0.95rem;
   color: #1a1a1a;
 }
+/* Glass Card Effect */
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
 
 #projects-preview .gallery {
   margin-top: 20px;
