@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SK Engineering Consultancy - Home</title>
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Header -->
   <header>
     <h1>SK Engineering Consultancy</h1>
     <nav>
@@ -21,32 +26,24 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <section class="hero">
-  <div class="hero-content">
-    <img src="images/17395.jpg" alt="3D Construction Design" class="hero-image" />
-    <div class="hero-text">
-      <h2>We Bring Your Dream Home to Life</h2>
-      <p>SK Engineering Consultancy offers advanced 3D house design, structural analysis & construction solutions tailored for your vision.</p>
-      <a href="#contact" class="btn">Get in Touch</a>
-    </div>
-  </div>
-</section>
 
-<section class="video-hero">
-  <video autoplay muted loop id="bg-video">
-    <source src="media/7816236-hd_1920_1080_25fps.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-  <div class="video-overlay"></div>
-  <div class="hero-content">
-    <h2>Welcome to SK Engineering Consultancy</h2>
-    <p>Innovative Solutions | Trusted Expertise | Lasting Impact</p>
-    <a href="services.html" class="btn">Explore Services</a>
-  </div>
-</section>
+    <!-- Hero Section with Video -->
+    <section class="video-hero">
+      <video autoplay muted loop id="bg-video">
+        <source src="media/7816236-hd_1920_1080_25fps.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="video-overlay"></div>
+      <div class="hero-content">
+        <h2>We Bring Your Dream Home to Life</h2>
+        <p>SK Engineering Consultancy offers advanced 3D house design, structural analysis & construction solutions tailored for your vision.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </section>
 
-
+    <!-- Services Section -->
     <section id="services-preview">
       <h3>Our Services</h3>
       <div class="cards">
@@ -70,6 +67,7 @@
       <a href="services.html" class="btn btn-secondary">Learn More</a>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects-preview">
       <h3>Recent Projects</h3>
       <div class="gallery">
@@ -79,28 +77,30 @@
       </div>
       <a href="projects.html" class="btn btn-secondary">View All Projects</a>
     </section>
+
   </main>
 
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-column">
-      <h3>Address</h3>
-      <p>Bharatpur -8, Chitwan</p>
-      <p><a href="mailto:Sweekarsubedi18@gmail.com">Sweekarsubedi18@gmail.com</a></p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Address</h3>
+        <p>Bharatpur -8, Chitwan</p>
+        <p><a href="mailto:Sweekarsubedi18@gmail.com">Sweekarsubedi18@gmail.com</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
     </div>
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
-        <i class="fab fa-facebook-f"></i>
-      </a>
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      <span>&uarr;</span>
     </div>
-  </div>
-  <div class="scroll-top">
-    <span>&uarr;</span>
-  </div>
-</footer>
+  </footer>
 
-
+  <!-- WhatsApp Floating Button -->
   <a href="https://wa.me/9779857621750" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">💬</a>
 
 </body>
