@@ -117,13 +117,20 @@ main {
   box-shadow:
     6px 6px 12px rgba(0,0,0,0.1),
     -6px -6px 12px rgba(255,255,255,0.7);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: default;
+
+  /* 3D perspective setup */
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .card:hover {
-  transform: translateZ(20px) scale(1.05);
+  transform: rotateY(8deg) rotateX(5deg);
+  box-shadow: 12px 12px 24px rgba(0,0,0,0.2),
+              -12px -12px 24px rgba(255,255,255,0.5);
 }
+
 
 .card h4 {
   margin-bottom: 10px;
